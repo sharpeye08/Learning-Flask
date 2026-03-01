@@ -14,9 +14,9 @@ def about():
 def contact():
     return "This is a contact us page"
 
-@app.route("/submit", methods=["GET", "POST"])
+@app.route("/submit" , methods = ["GET" , "POST"])
 def submit():
     if request.method == "POST":
-        return "You send data!"
-    else :
-        return "You are just viewing the data!"
+        return "You are sending the data"
+    else:
+        return "You are only viewing the data!"
